@@ -1,0 +1,26 @@
+1)
+conda create -n pref python=3.9.12 -y
+
+2)
+conda activate pref
+
+3)
+pip install django==3.1.14
+
+4)
+mkdir pref
+cd pref
+django-admin startproject django_project .
+
+5)
+python manage.py startapp post
+
+6)
+python manage.py makemigrations
+python manage.py migrate
+
+7)
+python manage.py runserver
+
+8)
+http://127.0.0.1:8000
